@@ -1,5 +1,9 @@
 export const emojis = [
   {
+    icon: '',
+    label: 'Sin emoji'
+  },
+  {
     icon: '🎨',
     label: 'Mejora de la estructura y/o el formato del código'
   },
