@@ -5,5 +5,6 @@ export const useCommitStore = create((set) => ({
   selectedAmbit: '',
   selectedEmoji: '',
 
-  selectType: (type) => set((state) => ({ selectedType: type }))
+  selectType: (type) => set((state) => ({ selectedType: type })),
+  selectAmbit: (ambit) => set((state) => ({ selectedAmbit: ambit }))
 }))

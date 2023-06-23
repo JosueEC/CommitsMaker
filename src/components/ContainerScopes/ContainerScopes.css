@@ -1,0 +1,16 @@
+.containerScopes {
+  border: solid 2px green;
+  width: 90vw;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.boxScopes {
+  border: solid 2px orange;
+  width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}

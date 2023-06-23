@@ -1,4 +1,5 @@
 export const scopesFrontend = [
+  'none',
   'components',
   'hooks',
   'pages',
@@ -10,6 +11,7 @@ export const scopesFrontend = [
 ]
 
 export const scopesBackend = [
+  'none',
   'helpers',
   'middlewares',
   'services',

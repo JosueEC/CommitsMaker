@@ -1,14 +1,23 @@
 import './App.css'
-import ContainerTypes from './components/ContainerTypes/ContainerTypes'
 import { useCommitStore } from './services/zustand/store'
+import ContainerTypes from './components/ContainerTypes/ContainerTypes'
+import ContainerScopes from './components/ContainerScopes/ContainerScopes'
 
 function App () {
   const selectedType = useCommitStore((state) => state.selectedType)
+  const selectedAmbit = useCommitStore((state) => state.selectedAmbit)
   return (
     <section>
       <h1>CommitMaker</h1>
-      <h2>{selectedType}</h2>
+      <h2>
+        {
+          `${selectedType}
+          ${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}
+          :`
+        }
+      </h2>
       <ContainerTypes />
+      <ContainerScopes />
     </section>
   )
 }

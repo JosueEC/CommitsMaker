@@ -1,0 +1,10 @@
+.labelScope {
+  background-color: var(--element-black);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.labelScope--selected {
+  border: solid 2px rebeccapurple;
+}
