@@ -2,7 +2,7 @@ import './App.css'
 import { useCommitStore } from './services/zustand/store'
 import ContainerTypes from './components/ContainerTypes/ContainerTypes'
 import ContainerScopes from './components/ContainerScopes/ContainerScopes'
-import { ContainerEmojis } from './components/ContainerEmojis/ContainerEmojis'
+import ContainerEmojis from './components/ContainerEmojis/ContainerEmojis'
 
 function App () {
   const selectedType = useCommitStore((state) => state.selectedType)
