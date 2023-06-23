@@ -1,23 +1,14 @@
 import './App.css'
-import { useCommitStore } from './services/zustand/store'
+import ViewerCommit from './components/ViewerCommit/ViewerCommit'
 import ContainerTypes from './components/ContainerTypes/ContainerTypes'
 import ContainerScopes from './components/ContainerScopes/ContainerScopes'
 import ContainerEmojis from './components/ContainerEmojis/ContainerEmojis'
 
 function App () {
-  const selectedType = useCommitStore((state) => state.selectedType)
-  const selectedAmbit = useCommitStore((state) => state.selectedAmbit)
-  const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
   return (
     <section>
       <h1>CommitMaker</h1>
-      <h2>
-        {
-          `${selectedType}
-          ${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}
-          : ${selectedEmoji}`
-        }
-      </h2>
+      <ViewerCommit />
       <div className='containerMain'>
         <ContainerTypes />
         <ContainerScopes />

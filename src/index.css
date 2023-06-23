@@ -18,6 +18,15 @@
 
   /*  Animations */
   --fade-in: fadeIn 1s ease 0s 1 normal forwards;
+
+  /* Shadows  */
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-high:
+  0px 0.2px 0.3px hsl(var(--shadow-color) / 0.04),
+    -0.1px 4px 5.7px -0.1px hsl(var(--shadow-color) / 0.09),
+    -0.3px 8px 11.4px -0.2px hsl(var(--shadow-color) / 0.15),
+    -0.5px 14.7px 21px -0.4px hsl(var(--shadow-color) / 0.21),
+    -0.9px 26.6px 37.9px -0.5px hsl(var(--shadow-color) / 0.27);
 }
 
 * {
