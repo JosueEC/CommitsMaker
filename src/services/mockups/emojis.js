@@ -185,18 +185,106 @@ export const emojis = [
   },
   {
     icon: '🚸',
-    label: 'Mejorar la experiencia/usabilidad del usuario'
+    label: 'Mejorar la experiencia y /o usabilidad del usuario'
   },
   {
-    icon: '',
-    label: ''
+    icon: '🏗️',
+    label: 'Realizar cambios arquitectónicos (arquitectura)'
   },
   {
-    icon: '',
-    label: ''
+    icon: '📱',
+    label: 'Trabajar en el diseño adaptativo'
   },
   {
-    icon: '',
-    label: ''
+    icon: '🤡',
+    label: 'Simular cosas (mocks)'
+  },
+  {
+    icon: '🥚',
+    label: 'Añadir o actualizar un fichero .gitignore'
+  },
+  {
+    icon: '📸',
+    label: 'Añadir o actualizar instantáneas'
+  },
+  {
+    icon: '⚗️',
+    label: 'Realización de experimentos'
+  },
+  {
+    icon: '🔍',
+    label: 'Mejorar el SEO'
+  },
+  {
+    icon: '🔖',
+    label: 'Añadir o actualizar tipos'
+  },
+  {
+    icon: '🌱',
+    label: 'Añadir o actualizar ficheros semilla'
+  },
+  {
+    icon: '⛳',
+    label: 'Añadir, actualizar o eliminar banderas de características'
+  },
+  {
+    icon: '🥅',
+    label: 'Captura de errores.'
+  },
+  {
+    icon: '💫',
+    label: 'Añadir o actualizar animaciones y transiciones'
+  },
+  {
+    icon: '🗑️',
+    label: 'Código obsoleto que hay que limpiar'
+  },
+  {
+    icon: '🛂',
+    label: 'Trabajar en código relacionado con autorizaciones, funciones y permisos'
+  },
+  {
+    icon: '🩹',
+    label: 'Solución sencilla de un problema no crítico'
+  },
+  {
+    icon: '🧐',
+    label: 'Exploración / inspección de datos'
+  },
+  {
+    icon: '⚰️',
+    label: 'Eliminar código muerto'
+  },
+  {
+    icon: '🧪',
+    label: 'Añadir una prueba fallida'
+  },
+  {
+    icon: '👔',
+    label: 'Añadir o actualizar la lógica de negocio'
+  },
+  {
+    icon: '🩺',
+    label: 'Añadir o actualizar el chequeo'
+  },
+  {
+    icon: '🧱',
+    label: 'Cambios relacionados con las infraestructuras'
+  },
+  {
+    icon: '🧑‍💻',
+    label: 'Mejorar la experiencia de los desarrolladores'
+  },
+  {
+    icon: '💸',
+    label: 'Añadir patrocinios o infraestructuras relacionadas con el dinero'
+  },
+  {
+    icon: '🧵',
+    label: 'Añadir o actualizar código relacionado con multithreading o concurrencia'
+  },
+  {
+    icon: '🦺',
+    label: 'Añadir o actualizar código relacionado con la validación'
   }
 ]
