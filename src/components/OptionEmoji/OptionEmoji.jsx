@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
+import './OptionEmoji.css'
+
 export default function OptionEmoji ({ icon, label }) {
   return (
-    <div>
-      <p>{icon}</p>
-      <p>{label}</p>
+    <div className='optionEmoji'>
+      <p className='icon'>{icon}</p>
+      <p className='labelDefinition'>{label}</p>
     </div>
   )
 }
