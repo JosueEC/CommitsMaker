@@ -7,6 +7,7 @@ import ContainerEmojis from './components/ContainerEmojis/ContainerEmojis'
 function App () {
   const selectedType = useCommitStore((state) => state.selectedType)
   const selectedAmbit = useCommitStore((state) => state.selectedAmbit)
+  const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
   return (
     <section>
       <h1>CommitMaker</h1>
@@ -14,7 +15,7 @@ function App () {
         {
           `${selectedType}
           ${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}
-          :`
+          : ${selectedEmoji}`
         }
       </h2>
       <ContainerTypes />

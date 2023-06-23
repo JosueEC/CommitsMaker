@@ -68,7 +68,7 @@ export const emojis = [
     label: 'Corregir la compilación CI'
   },
   {
-    icon: '⬇⤵️',
+    icon: '⤵️',
     label: 'Bajar dependencias (version inferior)'
   },
   {

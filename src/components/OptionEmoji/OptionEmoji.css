@@ -3,6 +3,12 @@
   border-radius: 0.3rem;
   padding: 0.5rem;
   width: 130px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.optionEmoji--selected {
+  border: solid 2px rebeccapurple;
 }
 
 .labelDefinition {
