@@ -71,7 +71,7 @@ None: Not gitmoji
 - :arrow_up -> Upgrade dependencies
 - :pushpin -> Pin dependencies to specific versions
 - :construction_worker -> Add or update CI build system
-- :chart:with:upwards_trend -> Add or update analitycs or track code
+- :chart_with_upwards_trend -> Add or update analitycs or track code
 - :recycle -> Refactor code
 - :heavy_plus_sign -> Add a dependency
 - :heavy_minus_sign -> Remove a dependency
@@ -89,7 +89,8 @@ None: Not gitmoji
 - :boom -> Introduce breaking changes
 - :bento -> Add or update assets
 - :wheelchair -> Improve accessibility
-- :bulb -> Write code drunkenly
+- :bulb -> Add or update comments in source code
+- :beers -> Write code drunkenly
 - :speech_ballon -> Add or update text and literals
 - :card_file_box -> Perform database related changes
 - :loud_sound -> Add or update logs
