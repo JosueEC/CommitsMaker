@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Khand:wght@700&family=Lato&display=swap');
+
+:root {
+  /*  Fonts */
+  --text-font: 'Lato', sans-serif;
+  --button-font: 'Hindi', sans-serif;
+
+  /* Texts Color */
+  --text: #e4e4e4;
+  --label: #908E9B;
+
+  /* Elements Color */
+  --element-black: #202020;
+  --principal-color: #3a0ca3;
+  --secondary-color: #9932cc;
+  --solid-background: #151515;
+  --degraded-background: linear-gradient(to right, var(--principal-color), var(--secondary-color));
+
+  /*  Animations */
+  --fade-in: fadeIn 1s ease 0s 1 normal forwards;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: 0;
+  border: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--solid-background);
+  color: var(--text);
+  font-family: var(--text-font);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  animation: var(--fade-in);
+  border: solid 2px red;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

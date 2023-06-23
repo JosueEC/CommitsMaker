@@ -1,0 +1,10 @@
+.containerTypes {
+  border: solid 2px hotpink;
+  padding: 0.5rem;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
