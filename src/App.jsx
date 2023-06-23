@@ -18,8 +18,10 @@ function App () {
           : ${selectedEmoji}`
         }
       </h2>
-      <ContainerTypes />
-      <ContainerScopes />
+      <div className='containerMain'>
+        <ContainerTypes />
+        <ContainerScopes />
+      </div>
       <ContainerEmojis />
     </section>
   )

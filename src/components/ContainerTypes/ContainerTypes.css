@@ -1,7 +1,7 @@
 .containerTypes {
-  border: solid 2px hotpink;
+  /* border: solid 2px hotpink; */
   padding: 0.5rem;
-  width: 90vw;
+  width: 45vw;
   display: flex;
   align-items: center;
   justify-content: center;
