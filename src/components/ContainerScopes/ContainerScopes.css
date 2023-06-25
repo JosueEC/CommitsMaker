@@ -3,19 +3,28 @@
   border-left: 2px solid var(--label);
   width: 45vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   padding: 1rem;
   gap: 1rem;
 }
 
 .boxScopes {
-  border: solid 2px var(--label);
+  /* border: solid 2px var(--label); */
   border-radius: 0.3rem;
-  width: 50%;
+  width: 100%;
   height:fit-content;
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  /* align-items: start; */
   justify-content: center;
   gap: 0.5rem;
+}
+
+.content {
+  /* border: solid 2px var(--label); */
+  padding: 0.5rem;
+  display: flex;
+  align-items: start;
 }

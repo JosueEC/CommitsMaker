@@ -5,7 +5,11 @@ import OptionType from '../OptionType/OptionType'
 export default function ContainerTypes () {
   return (
     <div className='containerTypes'>
-      {
+      <div className='head'>
+        <p>Tipo de Commit</p>
+      </div>
+      <div className='content'>
+        {
           types.map(({ type, label }) => {
             return (
               <OptionType
@@ -16,6 +20,8 @@ export default function ContainerTypes () {
             )
           })
         }
+
+      </div>
     </div>
   )
 }
