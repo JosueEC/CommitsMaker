@@ -1,5 +1,7 @@
 export const scopesFrontend = [
   'none',
+  'assets',
+  'public',
   'components',
   'hooks',
   'pages',
@@ -7,11 +9,18 @@ export const scopesFrontend = [
   'utils',
   'redux',
   'api',
-  'lang'
+  'lang',
+  'README.md',
+  'package.json',
+  'index.html',
+  '.gitignore'
 ]
 
 export const scopesBackend = [
   'none',
+  'config',
+  'src',
+  'app',
   'helpers',
   'middlewares',
   'services',
@@ -19,5 +28,9 @@ export const scopesBackend = [
   'controllers',
   'models',
   'routes',
-  'validators'
+  'validators',
+  'README.md',
+  'package.json',
+  '.gitignore',
+  'index.js'
 ]
