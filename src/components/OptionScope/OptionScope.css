@@ -9,3 +9,8 @@
 .labelScope--selected {
   border: solid 2px rebeccapurple;
 }
+
+.buttonCloseScope {
+  margin-left: 0.6rem;
+  color: var(--label);
+}

@@ -6,5 +6,10 @@ export const useScopeStore = create((set) => ({
   scopesBackend,
 
   addScopeFrontend: (scope) => set((state) => ({ scopesFrontend: [...scopesFrontend, scope] })),
-  addScopeBackend: (scope) => set((state) => ({ scopesBackend: [...scopesBackend, scope] }))
+  addScopeBackend: (scope) => set((state) => ({ scopesBackend: [...scopesBackend, scope] })),
+
+  removeScope: (scope) => set((state) => ({
+    scopesFrontend: state.scopesFrontend.filter((element) => element !== scope),
+    scopesBackend: state.scopesBackend.filter((element) => element !== scope)
+  }))
 }))
