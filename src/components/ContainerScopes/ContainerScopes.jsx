@@ -1,6 +1,6 @@
 import './ContainerScopes.css'
 import { scopesFrontend, scopesBackend } from '../../services/mockups/scopes'
-import OptionScope from '../OptionScope/OptionScope'
+import SectionScope from '../SectionScope/SectionScope'
 
 export default function ContainerScopes () {
   return (
@@ -9,34 +9,8 @@ export default function ContainerScopes () {
         <p>Alcance (scope)</p>
       </div>
       <div className='content'>
-        <div className='boxScopes'>
-          <div className='head'>
-            <p>Frontend</p>
-          </div>
-          <div className='content'>
-            {
-              scopesFrontend.map((scope) => {
-                return (
-                  <OptionScope scope={scope} key={scope} />
-                )
-              })
-            }
-          </div>
-        </div>
-        <div className='boxScopes'>
-          <div className='head'>
-            <p>Backend</p>
-          </div>
-          <div className='content'>
-            {
-              scopesBackend.map((scope) => {
-                return (
-                  <OptionScope scope={scope} key={scope} />
-                )
-              })
-            }
-          </div>
-        </div>
+        <SectionScope textHead='Frontend' scopes={scopesFrontend} />
+        <SectionScope textHead='Backend' scopes={scopesBackend} />
       </div>
     </div>
   )
