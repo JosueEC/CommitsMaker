@@ -30,10 +30,6 @@ function App () {
       <Toaster richColors position='bottom-right' />
       <h1 className='title'>CommitMaker</h1>
       <ViewerCommit />
-      <div className='containerMain'>
-        <ContainerTypes />
-        <ContainerScopes />
-      </div>
       <div className='containerInputs'>
         <div className='boxInput'>
           <label>Descripcion corta</label>
@@ -47,7 +43,7 @@ function App () {
           />
         </div>
         <div className='boxInput'>
-          <label>Cuerpo del commit</label>
+          <label>Cuerpo del commit (opcional)</label>
           <textarea
             rows='10' cols='20' wrap='soft'
             id='inputBody'
@@ -57,6 +53,10 @@ function App () {
           />
         </div>
         <button onClick={handleCleanInputs} className='buttonCleanInputs'>Vaciar Campos</button>
+      </div>
+      <div className='containerMain'>
+        <ContainerTypes />
+        <ContainerScopes />
       </div>
       <ContainerEmojis />
     </section>

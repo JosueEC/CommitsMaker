@@ -27,7 +27,7 @@ export default function ViewerCommit () {
           onCopy={() => toast.success('Copy to cliboard')}
           text={commit + '\n' + body}
         >
-          <button className='buttonCopy'>Copy Commit</button>
+          <button className='buttonCopy'>Copiar Commit</button>
         </CopyToClipboard>
       </div>
     </div>
