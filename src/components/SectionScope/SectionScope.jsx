@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import './SectionScope.css'
 import { useState } from 'react'
+import { useCommitStore } from '../../services/zustand/store'
 import OptionScope from '../OptionScope/OptionScope'
 
-export default function SectionScope ({ textHead, scopes }) {
+export default function SectionScope ({ textHead, scopes, addScope }) {
+  const selectAmbit = useCommitStore((state) => state.selectAmbit)
   const [newScope, setNewScope] = useState('')
 
   function handleChange (event) {
@@ -12,12 +14,15 @@ export default function SectionScope ({ textHead, scopes }) {
   }
 
   function handleAddScope (event) {
-    scopes.push(newScope)
+    addScope(newScope)
+    selectAmbit(newScope)
+    setNewScope('')
   }
 
   function handleEnterPressed (event) {
-    const key = event.target.key
-    if (key === 'Enter') {
+    const pressedKey = event.key
+    console.info(pressedKey)
+    if (pressedKey === 'Enter') {
       handleAddScope()
     }
   }
@@ -31,6 +36,7 @@ export default function SectionScope ({ textHead, scopes }) {
           placeholder='Añadir un nuevo scope'
           onChange={handleChange}
           onKeyDown={handleEnterPressed}
+          value={newScope}
         />
         <button onClick={handleAddScope}>Añadir</button>
       </div>
