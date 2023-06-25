@@ -2,7 +2,7 @@ export const emojis = [
   {
     icon: '',
     label: 'Sin emoji',
-    tags: []
+    tags: ['feat', 'fix', 'docs', 'styles', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert']
   },
   {
     icon: '🎨',
