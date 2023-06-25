@@ -1,22 +1,36 @@
+.title {
+  margin: 1rem 0;
+  font-size: 3rem;
+  background: var(--degraded-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .containerMain {
-  /* border: solid 2px magenta; */
-  border-bottom: solid 1px var(--label);
+  border: solid 2px var(--label);
+  border-radius: 0.3rem;
   display: flex;
 }
 
 .containerInputs {
-  /* border: solid 2px red; */
+  /* border: solid 2px var(--label); */
+  background-color: var(--element-black);
+  box-shadow: var(--shadow-elevation-high);
+  border-radius: 0.3rem;
+  margin-top: 1rem;
   width: 90vw;
-  height: 90px;
+  height: fit-content;
   display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 0 4rem;
+  align-items: end;
+  justify-content: center;
+  padding: 1rem;
   gap: 1rem;
+  position: sticky;
+  top: 100px;
 }
 
 .boxInput {
-  /* border: solid 2px green; */
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
@@ -29,7 +43,9 @@
   width: 400px;
   height: 40px;
   font-size: 0.85rem;
+  font-family: var(--button-font);
   padding: 0.4rem;
+  resize: none;
 }
 
 .inputDescription:focus {
@@ -37,12 +53,18 @@
 }
 
 .inputBody {
-  /* border: solid 2px red; */
+  /* background-color: var(--label); */
   width: 600px;
   height: 40px;
   border-radius: 0.3rem;
   padding: 0.4rem;
   font-size: 0.85rem;
+  font-family: var(--button-font);
+  resize: none;
+}
+
+.inputBody:focus {
+  border: solid 1px rebeccapurple;
 }
 
 .buttonCleanInputs {
@@ -56,4 +78,9 @@
   font-weight: bold;
   letter-spacing: 0.7px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonCleanInputs:hover {
+  background-color: var(--label);
 }

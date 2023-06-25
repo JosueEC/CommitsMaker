@@ -54,7 +54,7 @@ section {
   align-items: center;
   padding: 1rem 0.5rem;
   animation: var(--fade-in);
-  border: solid 2px red;
+  /* border: solid 2px red; */
 }
 
 @keyframes fadeIn {

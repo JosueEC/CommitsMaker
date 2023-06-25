@@ -27,8 +27,8 @@ function App () {
 
   return (
     <section>
-      <Toaster richColors position='top-center' />
-      <h1>CommitMaker</h1>
+      <Toaster richColors position='bottom-right' />
+      <h1 className='title'>CommitMaker</h1>
       <ViewerCommit />
       <div className='containerMain'>
         <ContainerTypes />
@@ -37,7 +37,8 @@ function App () {
       <div className='containerInputs'>
         <div className='boxInput'>
           <label>Descripcion corta</label>
-          <input
+          <textarea
+            rows='10' cols='20' wrap='soft'
             id='inputDescription'
             type='text'
             className='inputDescription'
@@ -47,9 +48,9 @@ function App () {
         </div>
         <div className='boxInput'>
           <label>Cuerpo del commit</label>
-          <input
+          <textarea
+            rows='10' cols='20' wrap='soft'
             id='inputBody'
-            type='textarea'
             className='inputBody'
             placeholder='Agrega mas detalles sobre tu commit si es necesario'
             onChange={handleChangeBody}

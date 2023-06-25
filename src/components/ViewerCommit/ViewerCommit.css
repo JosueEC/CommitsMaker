@@ -1,5 +1,5 @@
 .viewerCommit {
-  /* border: solid 2px rebeccapurple; */
+  /* border: solid 2px var(--label); */
   background-color: var(--element-black);
   box-shadow: var(--shadow-elevation-high);
   padding: 1rem;
@@ -7,11 +7,22 @@
   border-radius: 0.3rem;
   font-size: 0.8rem;
   width: 90vw;
+  height: fit-content;
   position: sticky;
-  top: 0;
+  top: 10px;
   display: flex;
   justify-content:space-between;
   gap: 1rem;
+}
+
+.viewerCommit #commit {
+  word-wrap: break-word;
+}
+
+.containerCommit {
+  /* border: solid 2px var(--label); */
+  width: 80%;
+  height: fit-content;
 }
 
 .buttonCopy {
@@ -23,4 +34,10 @@
   font-family: var(--button-font);
   font-weight: bold;
   letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonCopy:hover {
+  background-color: var(--label);
 }

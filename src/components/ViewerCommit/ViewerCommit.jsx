@@ -13,18 +13,16 @@ export default function ViewerCommit () {
   const commit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji} ${description}`
 
   return (
-    <header className='viewerCommit'>
-      <h2 id='commit'>
-        {
-          commit
-        }
-        <br />
-        <br />
-        {
-          `${body}`
-        }
-      </h2>
-      <div>
+    <div className='viewerCommit'>
+      <div className='containerCommit'>
+        <h2 id='commit'>
+          {commit}
+          <br />
+          <br />
+          {body}
+        </h2>
+      </div>
+      <div className='copyComponent'>
         <CopyToClipboard
           onCopy={() => toast.success('Copy to cliboard')}
           text={commit + '\n' + body}
@@ -32,6 +30,6 @@ export default function ViewerCommit () {
           <button className='buttonCopy'>Copy Commit</button>
         </CopyToClipboard>
       </div>
-    </header>
+    </div>
   )
 }
