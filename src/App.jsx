@@ -18,6 +18,13 @@ function App () {
     editBody(event.target.value)
   }
 
+  function handleCleanInputs (event) {
+    document.getElementById('inputDescription').value = ''
+    document.getElementById('inputBody').value = ''
+    editDescription('')
+    editBody('')
+  }
+
   return (
     <section>
       <Toaster richColors position='top-center' />
@@ -31,6 +38,7 @@ function App () {
         <div className='boxInput'>
           <label>Descripcion corta</label>
           <input
+            id='inputDescription'
             type='text'
             className='inputDescription'
             placeholder='Describe tu commit en una oracion'
@@ -40,12 +48,14 @@ function App () {
         <div className='boxInput'>
           <label>Cuerpo del commit</label>
           <input
+            id='inputBody'
             type='textarea'
             className='inputBody'
             placeholder='Agrega mas detalles sobre tu commit si es necesario'
             onChange={handleChangeBody}
           />
         </div>
+        <button onClick={handleCleanInputs} className='buttonCleanInputs'>Vaciar Campos</button>
       </div>
       <ContainerEmojis />
     </section>

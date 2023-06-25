@@ -9,6 +9,7 @@
   width: 90vw;
   height: 90px;
   display: flex;
+  align-items: center;
   justify-content: start;
   padding: 0 4rem;
   gap: 1rem;
@@ -38,8 +39,21 @@
 .inputBody {
   /* border: solid 2px red; */
   width: 600px;
-  height: 150px;
+  height: 40px;
   border-radius: 0.3rem;
   padding: 0.4rem;
   font-size: 0.85rem;
+}
+
+.buttonCleanInputs {
+  background-color: rebeccapurple;
+  height: 60px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: var(--text);
+  font-family: var(--button-font);
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  cursor: pointer;
 }
