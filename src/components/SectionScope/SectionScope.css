@@ -1,7 +1,7 @@
 .sectionScope {
   /* border: solid 2px var(--label); */
   border-radius: 0.3rem;
-  width: 100%;
+  width: 45%;
   height:fit-content;
   padding: 0.5rem;
   display: flex;
@@ -14,6 +14,7 @@
   /* border: solid 2px var(--label); */
   padding: 0.5rem;
   display: flex;
+  flex-direction: row;
   align-items: start;
 }
 

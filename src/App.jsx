@@ -55,8 +55,8 @@ function App () {
         <button onClick={handleCleanInputs} className='buttonCleanInputs'>Vaciar Campos</button>
       </div>
       <div className='containerMain'>
-        <ContainerTypes />
         <ContainerScopes />
+        <ContainerTypes />
       </div>
       <ContainerEmojis />
     </section>
