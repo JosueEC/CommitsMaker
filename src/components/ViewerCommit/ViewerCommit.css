@@ -5,8 +5,22 @@
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
+  font-size: 0.8rem;
   width: 90vw;
-  height: 100px;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content:space-between;
+  gap: 1rem;
+}
+
+.buttonCopy {
+  background-color: rebeccapurple;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: var(--text);
+  font-family: var(--button-font);
+  font-weight: bold;
+  letter-spacing: 0.7px;
 }

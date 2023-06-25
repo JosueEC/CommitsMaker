@@ -3,3 +3,43 @@
   border-bottom: solid 1px var(--label);
   display: flex;
 }
+
+.containerInputs {
+  /* border: solid 2px red; */
+  width: 90vw;
+  height: 90px;
+  display: flex;
+  justify-content: start;
+  padding: 0 4rem;
+  gap: 1rem;
+}
+
+.boxInput {
+  /* border: solid 2px green; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.inputDescription {
+  /* border: solid 2px slateblue; */
+  border-radius: 0.3rem;
+  width: 400px;
+  height: 40px;
+  font-size: 0.85rem;
+  padding: 0.4rem;
+}
+
+.inputDescription:focus {
+  border: solid 2px rebeccapurple;
+}
+
+.inputBody {
+  /* border: solid 2px red; */
+  width: 600px;
+  height: 150px;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  font-size: 0.85rem;
+}
