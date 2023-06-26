@@ -1,5 +1,4 @@
 import './ContainerEmojis.css'
-// import { emojis } from '../../services/mockups/emojis'
 import { useEmojiStore } from '../../services/zustand/emojiStore'
 import OptionEmoji from '../OptionEmoji/OptionEmoji'
 
@@ -8,9 +7,9 @@ export default function ContainerEmojis () {
   return (
     <div className='containerEmojis'>
       {
-        emojis.map(({ icon, label }) => {
+        emojis.map(({ icon, label, tags }) => {
           return (
-            <OptionEmoji icon={icon} label={label} key={icon} />
+            <OptionEmoji icon={icon} label={label} tag={tags[0]} key={icon} />
           )
         })
       }

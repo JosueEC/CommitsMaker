@@ -2,12 +2,14 @@
 import './OptionEmoji.css'
 import { useCommitStore } from '../../services/zustand/store'
 
-export default function OptionEmoji ({ icon, label }) {
+export default function OptionEmoji ({ icon, label, tag }) {
   const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
   const selectEmoji = useCommitStore((state) => state.selectEmoji)
+  const selectType = useCommitStore((state) => state.selectType)
 
   function handleSelectEmoji (event) {
     selectEmoji(icon)
+    selectType(tag)
   }
 
   return (

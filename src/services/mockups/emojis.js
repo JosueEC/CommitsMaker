@@ -2,7 +2,7 @@ export const emojis = [
   {
     icon: '',
     label: 'Sin emoji',
-    tags: ['feat', 'fix', 'docs', 'styles', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert']
+    tags: ['', 'feat', 'fix', 'docs', 'styles', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert']
   },
   {
     icon: '🎨',
@@ -17,7 +17,7 @@ export const emojis = [
   {
     icon: '🔥',
     label: 'Eliminacion de código o archivos',
-    tags: ['fix', 'revert', 'refactor']
+    tags: ['refactor']
   },
   {
     icon: '🐛',
@@ -67,7 +67,7 @@ export const emojis = [
   {
     icon: '🔐',
     label: 'Añadir o actualizar secretos (.env)',
-    tags: ['build', 'chore']
+    tags: ['chore']
   },
   {
     icon: '🏷️',
@@ -77,7 +77,7 @@ export const emojis = [
   {
     icon: '🚨',
     label: 'Corregir las advertencias del compilador/linter',
-    tags: ['fix', 'refactor']
+    tags: ['refactor']
   },
   {
     icon: '🚧',
