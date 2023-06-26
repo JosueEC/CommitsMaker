@@ -1,9 +1,10 @@
 import './ViewerCommit.css'
+import { useState } from 'react'
 import { useCommitStore } from '../../services/zustand/store'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { toast } from 'sonner'
 
 export default function ViewerCommit () {
+  const [display, setDisplay] = useState(false)
   const selectedType = useCommitStore((state) => state.selectedType)
   const selectedAmbit = useCommitStore((state) => state.selectedAmbit)
   const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
@@ -11,6 +12,14 @@ export default function ViewerCommit () {
   const body = useCommitStore((state) => state.body)
 
   const commit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji} ${description}`
+
+  function handleCopyCommit () {
+    setDisplay(true)
+  }
+
+  function handleBlur () {
+    setDisplay(false)
+  }
 
   return (
     <div className='viewerCommit'>
@@ -24,11 +33,12 @@ export default function ViewerCommit () {
       </div>
       <div className='copyComponent'>
         <CopyToClipboard
-          onCopy={() => toast.success('Copy to cliboard')}
+          onCopy={handleCopyCommit}
           text={commit + '\n' + body}
         >
-          <button className='buttonCopy'>Copiar Commit</button>
+          <button className='buttonCopy' onBlur={handleBlur}>Copiar Commit</button>
         </CopyToClipboard>
+        <p style={{ visibility: (display) ? 'visible' : 'hidden' }}>Commit Copiado</p>
       </div>
     </div>
   )

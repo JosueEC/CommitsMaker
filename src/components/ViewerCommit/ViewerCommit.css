@@ -24,10 +24,22 @@
   height: fit-content;
 }
 
+.copyComponent {
+  /* border: solid 2px var(--label); */
+  text-align: center;
+}
+
+.copyComponent p {
+  color: yellow;
+  font-family: var(--button-font);
+  animation: var(--fade-in);
+}
+
 .buttonCopy {
   background-color: rebeccapurple;
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  margin-bottom: 0.3rem;
   border-radius: 0.3rem;
   color: var(--text);
   font-family: var(--button-font);
