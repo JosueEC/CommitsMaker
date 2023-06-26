@@ -2,6 +2,7 @@ import './ViewerCommit.css'
 import { useState } from 'react'
 import { useCommitStore } from '../../services/zustand/store'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import DescriptionCommit from '../DescriptionCommit/DescriptionCommit'
 
 export default function ViewerCommit () {
   const [display, setDisplay] = useState(false)
@@ -9,9 +10,7 @@ export default function ViewerCommit () {
   const selectedAmbit = useCommitStore((state) => state.selectedAmbit)
   const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
   const description = useCommitStore((state) => state.description)
-  const body = useCommitStore((state) => state.body)
   const editDescription = useCommitStore((state) => state.editDescription)
-  const editBody = useCommitStore((state) => state.editBody)
 
   const commit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji} ${description}`
   const partialCommit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji}`
@@ -24,36 +23,22 @@ export default function ViewerCommit () {
     setDisplay(false)
   }
 
-  function handleChangeDescription (event) {
-    editDescription(event.target.value)
-  }
-
   function handleCleanInputs (event) {
     document.getElementById('inputDescription').value = ''
     document.getElementById('inputBody').value = ''
     editDescription('')
-    editBody('')
   }
 
   return (
     <div className='viewerCommit'>
       <div className='containerCommit'>
         <h2>{partialCommit}</h2>
-        <div className='boxInput'>
-          <textarea
-            rows='10' cols='20' wrap='soft'
-            id='inputDescription'
-            type='text'
-            className='inputDescription'
-            placeholder='Describe tu commit'
-            onChange={handleChangeDescription}
-          />
-        </div>
+        <DescriptionCommit />
       </div>
       <div className='copyComponent'>
         <CopyToClipboard
           onCopy={handleCopyCommit}
-          text={commit + '\n' + body}
+          text={commit}
         >
           <button className='buttonCopy' onBlur={handleBlur}>Copiar Commit</button>
         </CopyToClipboard>
