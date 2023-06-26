@@ -10,8 +10,11 @@ export default function ViewerCommit () {
   const selectedEmoji = useCommitStore((state) => state.selectedEmoji)
   const description = useCommitStore((state) => state.description)
   const body = useCommitStore((state) => state.body)
+  const editDescription = useCommitStore((state) => state.editDescription)
+  const editBody = useCommitStore((state) => state.editBody)
 
   const commit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji} ${description}`
+  const partialCommit = `${selectedType}${(selectedAmbit !== 'none') ? '(' + selectedAmbit + ')' : ''}: ${selectedEmoji}`
 
   function handleCopyCommit () {
     setDisplay(true)
@@ -21,15 +24,31 @@ export default function ViewerCommit () {
     setDisplay(false)
   }
 
+  function handleChangeDescription (event) {
+    editDescription(event.target.value)
+  }
+
+  function handleCleanInputs (event) {
+    document.getElementById('inputDescription').value = ''
+    document.getElementById('inputBody').value = ''
+    editDescription('')
+    editBody('')
+  }
+
   return (
     <div className='viewerCommit'>
       <div className='containerCommit'>
-        <h2 id='commit'>
-          {commit}
-          <br />
-          <br />
-          {body}
-        </h2>
+        <h2>{partialCommit}</h2>
+        <div className='boxInput'>
+          <textarea
+            rows='10' cols='20' wrap='soft'
+            id='inputDescription'
+            type='text'
+            className='inputDescription'
+            placeholder='Describe tu commit'
+            onChange={handleChangeDescription}
+          />
+        </div>
       </div>
       <div className='copyComponent'>
         <CopyToClipboard
@@ -39,6 +58,7 @@ export default function ViewerCommit () {
           <button className='buttonCopy' onBlur={handleBlur}>Copiar Commit</button>
         </CopyToClipboard>
         <p style={{ visibility: (display) ? 'visible' : 'hidden' }}>Commit Copiado</p>
+        <button onClick={handleCleanInputs} className='buttonCleanInputs'>Vaciar Campos</button>
       </div>
     </div>
   )

@@ -52,3 +52,44 @@
 .buttonCopy:hover {
   background-color: var(--label);
 }
+
+.boxInput {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.inputDescription {
+  /* border: solid 2px slateblue; */
+  border-radius: 0.3rem;
+  width: 400px;
+  height: 70px;
+  font-size: 0.85rem;
+  font-family: var(--button-font);
+  padding: 0.5rem;
+  resize: none;
+}
+
+.inputDescription:focus {
+  border: solid 2px rebeccapurple;
+}
+
+.buttonCleanInputs {
+  background-color: rebeccapurple;
+  height: fit-content;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  color: var(--text);
+  font-family: var(--button-font);
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttonCleanInputs:hover {
+  background-color: var(--label);
+}
