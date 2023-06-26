@@ -7,5 +7,8 @@ export const useEmojiStore = create((set) => ({
 
   filterEmojis: (type) => set((state) => ({
     emojis: [...state.auxEmojis].filter((emoji) => emoji.tags.includes(type))
+  })),
+  getAllEmojis: () => set((state) => ({
+    emojis: [...state.auxEmojis]
   }))
 }))
