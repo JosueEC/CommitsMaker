@@ -1,3 +1,4 @@
+import './DescriptionCommit.css'
 import { useCommitStore } from '../../services/zustand/store'
 
 export default function DescriptionCommit () {

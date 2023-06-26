@@ -40,10 +40,10 @@ export default function ViewerCommit () {
           onCopy={handleCopyCommit}
           text={commit}
         >
-          <button className='buttonCopy' onBlur={handleBlur}>Copiar Commit</button>
+          <button className='buttonViewer' onBlur={handleBlur}>Copiar Commit</button>
         </CopyToClipboard>
         <p style={{ visibility: (display) ? 'visible' : 'hidden' }}>Commit Copiado</p>
-        <button onClick={handleCleanInputs} className='buttonCleanInputs'>Vaciar Campos</button>
+        <button onClick={handleCleanInputs} className='buttonViewer'>Vaciar Campos</button>
       </div>
     </div>
   )

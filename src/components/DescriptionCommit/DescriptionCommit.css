@@ -1,0 +1,36 @@
+.boxInput {
+  /* border: solid 2px red; */
+  height: fit-content;
+  margin-top: 0.3rem;
+}
+
+.inputDescription {
+  /* border: solid 2px greenyellow; */
+  background-color: var(--element-black);
+  color: var(--text);
+  border-radius: 0.3rem;
+  width: 400px;
+  height: 90px;
+  font-size: 0.85rem;
+  font-family: var(--button-font);
+  font-weight: bold;
+  padding: 0.5rem;
+  resize: none;
+}
+
+.inputDescription:focus {
+  border: solid 2px rebeccapurple;
+}
+
+.inputDescription::-webkit-scrollbar {
+  width: 10px;
+}
+
+.inputDescription::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.inputDescription::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 0.3rem;    
+}
