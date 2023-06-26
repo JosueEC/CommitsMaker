@@ -1,6 +1,4 @@
 .containerScopes {
-  /* border: solid 2px var(--label); */
-  /* border-left: 2px solid var(--label); */
   width: 90vw;
   display: flex;
   flex-direction: column;
@@ -8,4 +6,15 @@
   justify-content: start;
   padding: 1rem;
   gap: 1rem;
+}
+
+/* Movil */
+@media screen and (max-width: 767px) {
+  section {
+    border: solid 2px rebeccapurple;
+  }
+
+  .containerScopes {
+    flex-direction: column;
+  }
 }
