@@ -53,3 +53,12 @@
 .buttonViewer:hover {
   background-color: var(--label);
 }
+
+.distinct {
+  background-color: var(--label);
+  transition: 0.3s;
+}
+
+.distinct:hover {
+  color: yellow;
+}
