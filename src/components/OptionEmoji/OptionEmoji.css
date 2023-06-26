@@ -5,6 +5,7 @@
   width: 130px;
   height: 120px;
   cursor: pointer;
+  animation: var(--fade-in);
 }
 
 .optionEmoji--selected {

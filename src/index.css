@@ -17,7 +17,7 @@
   --degraded-background: linear-gradient(to right, var(--principal-color), var(--secondary-color));
 
   /*  Animations */
-  --fade-in: fadeIn 1s ease 0s 1 normal forwards;
+  --fade-in: fadeIn 1s ease 0s 1 normal;
 
   /* Shadows  */
   --shadow-color: 0deg 0% 0%;

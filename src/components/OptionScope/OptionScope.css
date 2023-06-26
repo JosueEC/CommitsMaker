@@ -4,6 +4,7 @@
   border-radius: 0.3rem;
   height: 40px;
   cursor: pointer;
+  animation: var(--fade-in);
 }
 
 .labelScope--selected {
