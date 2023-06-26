@@ -1,25 +1,37 @@
 .sectionScope {
+  /* border: solid 2px red; */
   border-radius: 0.3rem;
-  /* width: 45%; */
-  height:fit-content;
+  width: 90vw;
+  height: fit-content;
   padding: 0.5rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
 }
 
 .content {
-  /* border: solid 2px var(--label); */
+  /* border: solid 2px indianred; */
   padding: 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: start;
 }
 
-.head {
+.contentScopes {
+  /* border: solid 2px hotpink; */
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
+}
+
+.head {
+  /* border: solid 2px greenyellow; */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .sectionScope .head input {

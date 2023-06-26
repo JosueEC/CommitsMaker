@@ -41,7 +41,7 @@ export default function SectionScope ({ textHead, scopes, addScope, filterScope 
         />
         <button onClick={handleAddScope}>Añadir</button>
       </div>
-      <div className='content'>
+      <div className='contentScopes'>
         {
           scopes.map((scope) => {
             return (
