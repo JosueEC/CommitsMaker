@@ -7,6 +7,8 @@ export default function ContainerScopes () {
   const scopesBackend = useScopeStore((state) => state.scopesBackend)
   const addScopeFrontend = useScopeStore((state) => state.addScopeFrontend)
   const addScopeBackend = useScopeStore((state) => state.addScopeBackend)
+  const filterScopesFrontend = useScopeStore((state) => state.filterScopesFrontend)
+  const filterScopesBackend = useScopeStore((state) => state.filterScopesBackend)
 
   return (
     <div className='containerScopes'>
@@ -18,11 +20,13 @@ export default function ContainerScopes () {
           textHead='Frontend'
           scopes={scopesFrontend}
           addScope={addScopeFrontend}
+          filterScope={filterScopesFrontend}
         />
         <SectionScope
           textHead='Backend'
           scopes={scopesBackend}
           addScope={addScopeBackend}
+          filterScope={filterScopesBackend}
         />
       </div>
     </div>

@@ -4,13 +4,14 @@ import { useState } from 'react'
 import { useCommitStore } from '../../services/zustand/store'
 import OptionScope from '../OptionScope/OptionScope'
 
-export default function SectionScope ({ textHead, scopes, addScope }) {
+export default function SectionScope ({ textHead, scopes, addScope, filterScope }) {
   const selectAmbit = useCommitStore((state) => state.selectAmbit)
   const [newScope, setNewScope] = useState('')
 
   function handleChange (event) {
     const text = event.target.value
     setNewScope(text)
+    filterScope(text)
   }
 
   function handleAddScope (event) {
@@ -32,7 +33,7 @@ export default function SectionScope ({ textHead, scopes, addScope }) {
       <div className='head'>
         <p>{textHead}</p>
         <input
-          type='text'
+          type='search'
           placeholder='Añadir un nuevo scope'
           onChange={handleChange}
           onKeyDown={handleEnterPressed}
