@@ -1,5 +1,6 @@
 import './ContainerScopes.css'
 import { useScopeStore } from '../../services/zustand/scopeStore'
+import { Tooltip } from 'react-tooltip'
 import SectionScope from '../SectionScope/SectionScope'
 
 export default function ContainerScopes () {
@@ -13,7 +14,21 @@ export default function ContainerScopes () {
   return (
     <div className='containerScopes'>
       <div className='head'>
-        <p>Alcance (scope)</p>
+        <p>Alcance (scope)
+          <span
+            className='material-symbols-outlined'
+            data-tooltip-id='infoScope'
+            data-tooltip-content='Hello World!'
+          >
+            help
+          </span>
+        </p>
+        <Tooltip
+          id='infoScope'
+          place='right'
+          type='info'
+          effect='solid'
+        />
       </div>
       <div className='content'>
         <SectionScope

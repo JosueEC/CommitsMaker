@@ -70,6 +70,14 @@ section {
   /* border: solid 2px red; */
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
