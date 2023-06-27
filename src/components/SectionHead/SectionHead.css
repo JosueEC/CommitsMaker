@@ -1,0 +1,10 @@
+.head {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--label);
+  padding-bottom: 0.3rem;
+}
+
+.head span {
+  margin-left: 0.4rem;
+  cursor: help;
+}
