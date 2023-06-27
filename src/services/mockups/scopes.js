@@ -1,5 +1,6 @@
 export const scopesFrontend = [
   'none',
+  'src',
   'assets',
   'public',
   'components',
