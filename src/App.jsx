@@ -1,6 +1,8 @@
 import './App.css'
 import { useEmojiStore } from './services/zustand/emojiStore'
 import { useCommitStore } from './services/zustand/store'
+import { tooltipEmoji } from './utils/infoTooltips'
+import SectionHead from './components/SectionHead/SectionHead'
 import ViewerCommit from './components/ViewerCommit/ViewerCommit'
 import ContainerTypes from './components/ContainerTypes/ContainerTypes'
 import ContainerScopes from './components/ContainerScopes/ContainerScopes'
@@ -25,11 +27,18 @@ function App () {
         <ContainerScopes />
         <ContainerTypes />
       </div>
-      <button
-        className='buttonViewer'
-        onClick={handleClickGetEmojis}
-      >Mostrar todos los ejemplos
-      </button>
+      <div className='containerGetEmojis'>
+        <button
+          className='buttonViewer'
+          onClick={handleClickGetEmojis}
+        >Mostrar todos los ejemplos
+        </button>
+        <SectionHead
+          textHead=''
+          tooltipID='infoEmoji'
+          tooltipContent={tooltipEmoji}
+        />
+      </div>
       <ContainerEmojis />
     </section>
   )

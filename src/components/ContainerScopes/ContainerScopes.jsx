@@ -1,5 +1,6 @@
 import './ContainerScopes.css'
 import { useScopeStore } from '../../services/zustand/scopeStore'
+import { tooltipScope } from '../../utils/infoTooltips'
 import SectionScope from '../SectionScope/SectionScope'
 import SectionHead from '../SectionHead/SectionHead'
 
@@ -14,9 +15,9 @@ export default function ContainerScopes () {
   return (
     <div className='containerScopes'>
       <SectionHead
-        textHead='Alcane (scope)'
+        textHead='Alcance (scope)'
         tooltipID='infoScope'
-        tooltipContent='Hello World!'
+        tooltipContent={tooltipScope}
       />
       <div className='content'>
         <SectionScope

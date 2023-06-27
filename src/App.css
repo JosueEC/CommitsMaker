@@ -12,3 +12,11 @@
   border-radius: 0.3rem;
   align-items: start;
 }
+
+.containerGetEmojis {
+  display: flex;
+}
+
+.containerGetEmojis {
+  border: none;
+}
