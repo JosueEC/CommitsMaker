@@ -1,5 +1,4 @@
 .viewerCommit {
-  /* border: solid 2px var(--label); */
   background-color: var(--element-black);
   box-shadow: var(--shadow-elevation-high);
   padding: 1rem;
@@ -20,13 +19,11 @@
 }
 
 .containerCommit {
-  /* border: solid 2px var(--label); */
   width: 80%;
   height: fit-content;
 }
 
 .copyComponent {
-  /* border: solid 2px var(--label); */
   text-align: center;
 }
 
@@ -61,4 +58,19 @@
 
 .distinct:hover {
   color: yellow;
+}
+
+/* Movil */
+@media screen and (max-width: 767px) {
+  .viewerCommit {
+    flex-direction: column;
+  }
+
+  .containerCommit {
+    width: 100%;
+  }
+
+  .copyComponent {
+    display: flex;
+  }
 }
