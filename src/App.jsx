@@ -12,11 +12,17 @@ function App () {
   const getAllEmojis = useEmojiStore((state) => state.getAllEmojis)
   const selectType = useCommitStore((state) => state.selectType)
   const selectEmoji = useCommitStore((state) => state.selectEmoji)
+  const filterEmojisByName = useEmojiStore((state) => state.filterEmojisByName)
 
   function handleClickGetEmojis () {
     getAllEmojis()
     selectType('')
     selectEmoji('')
+  }
+
+  function handleChange (event) {
+    const text = event.target.value
+    filterEmojisByName(text)
   }
 
   return (
@@ -28,6 +34,11 @@ function App () {
         <ContainerTypes />
       </div>
       <div className='containerGetEmojis'>
+        <input
+          type='search'
+          placeholder='eliminar, añadir, corregir, css, dependencia, etc'
+          onChange={handleChange}
+        />
         <button
           className='buttonViewer'
           onClick={handleClickGetEmojis}

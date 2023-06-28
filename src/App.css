@@ -16,6 +16,26 @@
   display: flex;
 }
 
+.containerGetEmojis input {
+  text-indent: 10px;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  width: 300px;
+  height: 40px;
+}
+
 .containerGetEmojis {
   border: none;
+}
+
+/* Movil */
+@media screen and (max-width: 767px) {
+  .containerGetEmojis {
+    flex-direction: column;
+  }
+
+  .containerGetEmojis input  {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
 }

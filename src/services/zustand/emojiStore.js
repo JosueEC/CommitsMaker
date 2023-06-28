@@ -10,5 +10,10 @@ export const useEmojiStore = create((set) => ({
   })),
   getAllEmojis: () => set((state) => ({
     emojis: [...state.auxEmojis]
+  })),
+  filterEmojisByName: (name) => set((state) => ({
+    emojis: [...state.auxEmojis].filter((emoji) => {
+      return emoji.label.toLowerCase().includes(name.toLowerCase())
+    })
   }))
 }))
