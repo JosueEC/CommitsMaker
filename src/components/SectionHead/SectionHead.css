@@ -13,7 +13,13 @@
 }
 
 .react-tooltip {
-  line-break: auto;
   max-width: 300px;
   height: fit-content;
+}
+
+/* Movil */
+@media screen and (max-width: 767px) {
+  .react-tooltip {
+    max-width: 200px;
+  }
 }
