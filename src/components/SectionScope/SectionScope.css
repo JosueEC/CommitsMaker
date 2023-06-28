@@ -1,5 +1,4 @@
 .sectionScope {
-  /* border: solid 2px red; */
   border-radius: 0.3rem;
   width: 90vw;
   height: fit-content;
@@ -11,7 +10,6 @@
 }
 
 .content {
-  /* border: solid 2px indianred; */
   padding: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -19,7 +17,6 @@
 }
 
 .contentScopes {
-  /* border: solid 2px hotpink; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -28,7 +25,6 @@
 }
 
 .head {
-  /* border: solid 2px greenyellow; */
   display: flex;
   justify-content: center;
   gap: 1rem;

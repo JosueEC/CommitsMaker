@@ -1,5 +1,4 @@
 .containerTypes {
-  /* border: solid 2px var(--label); */
   padding: 0.5rem;
   margin-bottom: 1rem;
   width: 90vw;
@@ -11,7 +10,6 @@
 }
 
 .content {
-  /* border: solid 2px var(--label); */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
