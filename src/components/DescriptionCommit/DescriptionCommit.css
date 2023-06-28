@@ -2,6 +2,7 @@
   /* border: solid 2px red; */
   height: fit-content;
   margin-top: 0.3rem;
+  display: flex;
 }
 
 .inputDescription {

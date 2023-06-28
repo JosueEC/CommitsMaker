@@ -1,5 +1,7 @@
 import './DescriptionCommit.css'
 import { useCommitStore } from '../../services/zustand/store'
+import { tooltipCommit } from '../../utils/infoTooltips'
+import SectionHead from '../SectionHead/SectionHead'
 
 export default function DescriptionCommit () {
   const editDescription = useCommitStore((state) => state.editDescription)
@@ -17,6 +19,11 @@ export default function DescriptionCommit () {
         className='inputDescription'
         placeholder='Describe tu commit'
         onChange={handleChangeDescription}
+      />
+      <SectionHead
+        textHead=''
+        tooltipID='infoCommit'
+        tooltipContent={tooltipCommit}
       />
     </div>
   )
